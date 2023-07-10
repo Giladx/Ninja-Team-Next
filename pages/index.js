@@ -456,10 +456,18 @@ const Home = (props) => {
               />
             </a>
           </Link>
+          <span className="home-text85">
+            ©
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
           <div className="home-div1">
             <Script
               html={`<div class="years">
-© <span id="year"></span>
+<span id="year"></span>
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
@@ -1051,11 +1059,18 @@ const Home = (props) => {
             object-fit: cover;
             text-decoration: none;
           }
+          .home-text85 {
+            color: var(--dl-color-gray-white);
+            height: 24px;
+            font-size: 24px;
+            margin-top: var(--dl-space-space-twounits);
+            margin-left: var(--dl-space-space-threeunits);
+          }
           .home-div1 {
             color: white;
             height: 24px;
             margin-top: var(--dl-space-space-twounits);
-            margin-left: var(--dl-space-space-threeunits);
+            margin-left: 3.5px;
           }
           .home-copyright {
             color: rgb(255, 255, 255);
