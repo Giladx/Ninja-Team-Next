@@ -270,7 +270,7 @@ const Home = (props) => {
 </style>`}
           ></Script>
         </div>
-        <div className="hover08 hoverimg">
+        <div className="home-tech hover08 hoverimg">
           <figure className="home-figure">
             <img
               alt="image"
@@ -768,6 +768,9 @@ const Home = (props) => {
             width: 25px;
             object-fit: cover;
           }
+          .home-tech {
+            width: 100%;
+          }
           .home-figure {
             flex: 0 0 auto;
             display: flex;
@@ -1030,8 +1033,8 @@ const Home = (props) => {
             max-width: 400px;
           }
           .home-image12 {
-            top: -57px;
-            right: 31px;
+            top: -32px;
+            right: 4px;
             width: 50%;
             position: absolute;
             object-fit: cover;
@@ -1080,6 +1083,20 @@ const Home = (props) => {
             margin-top: var(--dl-space-space-twounits);
             margin-left: 3.5px;
           }
+          @media (max-width: 1600px) {
+            .home-tech {
+              width: 100%;
+            }
+          }
+          @media (max-width: 1200px) {
+            .home-tech {
+              width: 100%;
+            }
+            .home-image12 {
+              top: 0px;
+              right: -29px;
+            }
+          }
           @media (max-width: 991px) {
             .home-desktop-menu {
               display: none;
@@ -1098,6 +1115,9 @@ const Home = (props) => {
             .home-logo {
               color: #000000;
             }
+            .home-tech {
+              width: 100%;
+            }
             .home-row {
               flex-direction: column;
             }
@@ -1110,8 +1130,15 @@ const Home = (props) => {
             .home-description3 {
               width: 498px;
             }
+            .home-card2 {
+              width: 100%;
+            }
             .home-row1 {
               flex-direction: column;
+            }
+            .home-image12 {
+              top: -90px;
+              right: 16px;
             }
           }
           @media (max-width: 767px) {
@@ -1153,6 +1180,9 @@ const Home = (props) => {
               font-size: 20px;
               line-height: 30px;
             }
+            .home-tech {
+              width: 100%;
+            }
             .home-cards {
               padding-top: var(--dl-space-space-threeunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
@@ -1173,7 +1203,7 @@ const Home = (props) => {
               font-size: 24px;
             }
             .home-description2 {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 21px;
             }
             .home-card1 {
@@ -1190,7 +1220,7 @@ const Home = (props) => {
               font-size: 24px;
             }
             .home-description3 {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 21px;
             }
             .home-text47 {
@@ -1262,7 +1292,7 @@ const Home = (props) => {
               font-size: 24px;
             }
             .home-description4 {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 21px;
             }
             .home-footer {
@@ -1279,6 +1309,9 @@ const Home = (props) => {
             .home-mobile-menu {
               padding: 16px;
             }
+            .home-paragraph {
+              font-size: 21px;
+            }
             .home-avatar {
               width: 100px;
               height: 100px;
@@ -1287,6 +1320,14 @@ const Home = (props) => {
             .home-avatar1 {
               width: 100px;
               height: 100px;
+            }
+            .home-image11 {
+              width: 100px;
+              height: 100px;
+            }
+            .home-image12 {
+              top: -7px;
+              right: 3px;
             }
           }
         `}
