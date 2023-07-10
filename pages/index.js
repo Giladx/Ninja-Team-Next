@@ -1053,12 +1053,14 @@ const Home = (props) => {
           }
           .home-div1 {
             color: white;
+            height: 24px;
             margin-top: var(--dl-space-space-twounits);
             margin-left: var(--dl-space-space-threeunits);
           }
           .home-copyright {
             color: rgb(255, 255, 255);
             width: 100%;
+            height: 24px;
             font-size: 24px;
             margin-top: var(--dl-space-space-twounits);
             margin-left: 3.5px;
