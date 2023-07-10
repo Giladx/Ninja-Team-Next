@@ -223,7 +223,7 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
-            <div id="typedtext" className="container-v"></div>
+            <div id="typedtext" className="home-typed container-v"></div>
             <div className="home-div">
               <Script
                 html={`<style>
@@ -839,6 +839,9 @@ const Home = (props) => {
             width: 100%;
             font-size: 35px;
             line-height: 60px;
+          }
+          .home-typed {
+            border-width: 0px;
           }
           .home-div {
             width: 100%;
