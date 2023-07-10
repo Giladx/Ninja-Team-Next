@@ -306,7 +306,6 @@ const Home = (props) => {
         </div>
     </div>
 <script>
-   <script>
         new TypeIt("#descElement", {
                 speed: 25,
             })
@@ -828,7 +827,7 @@ const Home = (props) => {
           .home-content {
             gap: var(--dl-space-space-threeunits);
             width: 100%;
-            display: flex;
+            display: none;
             align-items: flex-start;
             flex-direction: column;
           }
