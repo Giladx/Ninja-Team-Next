@@ -250,8 +250,8 @@ const Home = (props) => {
 <script>
         // set up text to print, each item in array is new line
         var aText = new Array(
-            "Ninja Team is a highly skilled and specialized team consisting of three members: Shirly, the designer,",
-            "Boaz, the project manager, and Gilad, the developer. The team uses their collective knowledge and",
+            "Ninja Team is a highly skilled and specialized team consisting of three members: Shirly, the designer, Boaz, the project manager, and Gilad, the developer.", 
+            "The team uses their collective knowledge and",
             "expertise to create high-end Jamstack web solutions for their clients.",
             "<br>",
             "As the designer, Shirly brings a wealth of experience in creating visually stunning and intuitive web designs. She works closely with",
