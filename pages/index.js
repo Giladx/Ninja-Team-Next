@@ -236,15 +236,6 @@ const Home = (props) => {
             flex-direction: column;
             background-color: #27272D;
         }
-
-        .container-v {
-            margin-top: 2em;
-            width: 100%;
-            font-size: 35px;
-            line-height: 60px;
-            font-family: 'Khand', sans-serif;
-            color: aliceblue;
-        }
 </style>
 
 <script>
