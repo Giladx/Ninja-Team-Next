@@ -223,7 +223,7 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
-            <div id="typedtext" className="home-typed"></div>
+            <div id="typedtext" className="container-v"></div>
             <div className="home-div">
               <Script
                 html={`<style>
@@ -839,14 +839,6 @@ const Home = (props) => {
             width: 100%;
             font-size: 35px;
             line-height: 60px;
-          }
-          .home-typed {
-            flex: 0 0 auto;
-            width: 100%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            height: auto;
-            display: flex;
-            align-items: flex-start;
           }
           .home-div {
             width: 100%;

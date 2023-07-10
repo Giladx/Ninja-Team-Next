@@ -158,6 +158,19 @@
   justify-content: center;
 }
 
+.container-v {
+  flex: 0 0 auto;
+  color: aliceblue;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  font-size: 35px;
+  margin-top: 2em;
+  align-items: flex-start;
+  font-family: 'Khand', sans-serif;
+  line-height: 60px;
+}
 .Heading {
   font-size: 32px;
   font-family: Khand;
