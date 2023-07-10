@@ -225,8 +225,7 @@ const Home = (props) => {
             </div>
             <div className="home-div">
               <Script
-                html={`<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-<style>
+                html={`<style>
 .description {
             gap: 120px;
             width: 100%;
@@ -306,6 +305,7 @@ const Home = (props) => {
             </span>
         </div>
     </div>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
         new TypeIt("#descElement", {
                 speed: 25,
