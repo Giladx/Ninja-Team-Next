@@ -150,6 +150,14 @@
   color: white;
   border-color: white;
 }
+.hoverimg {
+  flex: 0 0 auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Heading {
   font-size: 32px;
   font-family: Khand;
@@ -166,6 +174,8 @@
   text-transform: none;
   text-decoration: none;
 }
+
+
 
 @media(max-width: 767px) {
   .button-link {

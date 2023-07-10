@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Script from 'dangerous-html/react'
@@ -24,31 +25,11 @@ const Home = (props) => {
           />
         </Head>
         <header data-thq="thq-navbar" className="home-navbar">
-          <div>
-            <Script
-              html={`<svg width="80px" height="80px" version="1.1" viewBox="0 0 195.36482 191.56783" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <radialGradient id="a" cx="11.112578" cy="-428.25681" r="100.00022" gradientTransform="matrix(1.0000673,0,0,1.0000673,-73.831772,659.10129)" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1736ef" offset="0"></stop>
-                    <stop stop-color="#2f3768" offset=".89653701"></stop>
-                    <stop stop-color="#18288a" stop-opacity=".54901963" offset="1"></stop>
-                    <stop stop-color="#201f5b" stop-opacity="0" offset="1"></stop>
-                </radialGradient>
-            </defs>
-            <g transform="translate(-175.11029,61.581942)">
-                <ellipse transform="rotate(44.816851)" cx="-62.718407" cy="230.81564" rx="98.904877" ry="98.904869" fill="url(#a)" opacity=".99" stroke="#4852a3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.20415"></ellipse>
-                <path d="m185.91151-34.39404c6.77741-9.939571 35.57753-27.748082 53.44196-25.407115 44.23542-2.535449 69.63492 35.975063 54.47317 69.6350871l-6.78973 29.0779839 20.91377 20.077239c-17.45391 2.006199-85.93351 67.042885-60.23173 69.433755l-24.67825-1.25483 5.25058-50.583629c-8.96724 12.491741 21.27465-26.624947 65.53536-66.7505189-59.45543-29.7009451-32.14165-23.2158541-49.51285-32.1353741-16.74274-14.499374-47.88403-16.788822-58.40228-12.092598z" fill="#fcfcfc" stroke="#111" stroke-width="3.13"></path>
-                <g transform="matrix(1.5649959,0,0,1.5649959,-252.8181,480.84496)" stroke="#111" style="mix-blend-mode:normal">
-                    <path transform="scale(.26458333)" d="m1202.9485-1156.2667c-12.9544-.2307-71.0325 60.3162-90.2322 71.2561-31.2934 10.8829-29.9582 6.7565-48.7849-15.1302-8.3312-9.6852-6.3865-9.2908-20.6583 26.8858l19.3717 39.8442c26.8204 46.47032 15.0995 23.4507 39.3905 62.84743 29.3484 25.7916 20.7886 19.39538 29.3484 25.7916 36.8911-38.54745 236.1095-245.08963 181.7141-192.47483-37.8593-12.2699-93.5158-16.1968-110.1493-19.0201z" fill="#ccc" stroke-width="3.77953"></path>
-                    <path d="m286.10918-295.31853c.27289-.0121 11.70826-5.29697 13.91821-10.09127 0 2.89782 2.36591 4.02956-.18899 7.08706-5.57842 3.2914-13.80376 3.00168-13.72922 3.00421" fill="#fdfdfd"></path>
-                </g>
-                <path d="m245.04736 58.535221c-9.00309 10.291789-11.0816 14.033397-16.75608 18.049223 4.82086-9.708483 11.68878-14.433488 8.02746-30.498703l-13.60523 6.211109c8.73286-6.157492 10.62946-14.318695 12.1474-20.715929l-29.20558 18.471835c10.42333-12.34245 23.56471-37.166666 25.52003-37.228827 19.19059-24.989683 52.6252.153839 59.72334-2.8807507-16.3845 18.1608227-4.07731 8.2117837-22.8187 25.9667247z" fill="#fcfcfc" stroke="#000" stroke-width="1.565" style="mix-blend-mode:normal"></path>
-                <path d="m179.63736 6.5970041c-7.66103-30.7303991 1.39997-32.1972381 6.27415-40.9910441 46.4289-1.456855 55.97484 11.076368 71.52514 21.332066l3.13338 2.154201 30.32868 20.8509575c-17.28548 1.4447885-32.39806-12.6461686-60.64996-6.2741312 2.21497-2.5841213-2.79673-10.2488762-10.03864-9.2020351 6.34758-6.2230812 11.4526-6.2333632 16.73103-7.1107002-17.00988-6.552996-33.44207 29.04994-57.30378 19.2406861z" fill="#ccc" stroke="#111" stroke-width="3.12999"></path>
-                <path d="m293.82664 9.8339321c2.68375 11.5055529-1.73589 29.6071089 10.77217 31.9900969 12.82903-7.039664 25.64234-7.975094 38.44951-6.50683-11.71062.86333-17.66265 3.081633-15.97134 7.098367 14.60472-2.773032 15.54519 7.067068 20.7036 13.013693-5.48335-21.943966 10.57565-13.967965 17.74591-18.337465-4.29638-11.16299-12.90871-16.571397-31.35116-8.872979-15.08584 8.206964-20.3772 4.442899-28.98501 4.732251l13.01369-6.506846c-20.5594 1.923411-17.98185-10.035365-24.37737-16.6102879 5.03189 1.8729249 8.75132 8.3394249 16.68748.047419l-1.77459 7.0983989c3.48955-10.8563136 9.98652-11.186653 16.56287-11.2391116l-11.2391-5.91530901c17.31734 2.05657681 33.89047 14.53255161 52.64628-3.54917589-15.64795-.4541462-11.86285-10.1134105-13.60524-17.1544035-3.58789 11.4644851-10.02187 15.3394151-18.33747 14.1967331l10.64758 5.91530919c-11.16102-2.56329119-22.48284-5.12659799-31.35115-7.68988919-5.59921-1.354551-11.52938-.557858-20.23666 18.290029z" fill="#ccc" stroke="#111" stroke-width="3.12999"></path>
-            </g>
-        </svg>`}
-            ></Script>
-          </div>
+          <Link href="/">
+            <a className="home-link">
+              <img src="/path15-200h.webp" alt="image" className="home-image" />
+            </a>
+          </Link>
           <div
             data-thq="thq-navbar-nav"
             data-role="Nav"
@@ -76,14 +57,14 @@ const Home = (props) => {
                 <img
                   alt="image"
                   src="/Icons/twitter.svg"
-                  className="home-image"
+                  className="home-image01"
                 />
               </button>
               <button className="social button">
                 <img
                   alt="image"
                   src="/Icons/discord.svg"
-                  className="home-image01"
+                  className="home-image02"
                 />
               </button>
             </div>
@@ -105,7 +86,7 @@ const Home = (props) => {
               className="home-nav1"
             >
               <div className="home-container1">
-                <span className="home-logo2">Character</span>
+                <span className="home-logo">Character</span>
                 <div data-thq="thq-close-menu" className="home-menu-close">
                   <svg viewBox="0 0 1024 1024" className="home-icon02">
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -260,7 +241,7 @@ const Home = (props) => {
                 href="https://discord.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link1 button-link button"
+                className="home-link2 button-link button"
               >
                 <span>Join us on Discord</span>
                 <img
@@ -272,15 +253,56 @@ const Home = (props) => {
             </div>
           </div>
         </section>
-        <div className="home-tech">
-          <img alt="image" src="/angular-200h.webp" className="home-image02" />
-          <img alt="image" src="/strapi-200h.webp" className="home-image03" />
-          <img alt="image" src="/react-200h.png" className="home-image04" />
-          <img alt="image" src="/ghost-200h.png" className="home-image05" />
-          <img alt="image" src="/vuejs-200h.png" className="home-image06" />
-          <img alt="image" src="/nuxt-200h.png" className="home-image07" />
-          <img alt="image" src="/nextjs-200h.png" className="home-image08" />
-          <img alt="image" src="/gatsbyjs-200h.png" className="home-image09" />
+        <div>
+          <Script
+            html={`<style>
+/* Gray Scale */
+.hover08 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover08 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+</style>`}
+          ></Script>
+        </div>
+        <div className="hover08 hoverimg">
+          <figure className="home-figure">
+            <img
+              alt="image"
+              src="/angular-200h.webp"
+              className="home-image03"
+            />
+          </figure>
+          <figure className="home-figure1">
+            <img alt="image" src="/strapi-200h.webp" className="home-image04" />
+          </figure>
+          <figure className="home-figure2">
+            <img alt="image" src="/react-200h.png" className="home-image05" />
+          </figure>
+          <figure className="home-figure3">
+            <img alt="image" src="/ghost-200h.png" className="home-image06" />
+          </figure>
+          <figure className="home-figure4">
+            <img alt="image" src="/vuejs-200h.png" className="home-image07" />
+          </figure>
+          <figure className="home-figure5">
+            <img alt="image" src="/nuxt-200h.png" className="home-image08" />
+          </figure>
+          <figure className="home-figure6">
+            <img alt="image" src="/nextjs-200h.png" className="home-image09" />
+          </figure>
+          <figure className="home-figure7">
+            <img
+              alt="image"
+              src="/gatsbyjs-200h.png"
+              className="home-image10"
+            />
+          </figure>
         </div>
         <section id="go" className="home-cards">
           <div className="home-row">
@@ -333,6 +355,8 @@ const Home = (props) => {
                       Brand identity, UI web-APP flow, Mockups, Strategic brand
                       awareness and Technological AI implementation for content.
                     </span>
+                    <br></br>
+                    <br></br>
                   </p>
                 </div>
               </div>
@@ -343,22 +367,22 @@ const Home = (props) => {
                 <div className="home-content2">
                   <h2 className="home-header2">Boaz Glick</h2>
                   <p className="home-description3">
-                    <span className="home-text45">
+                    <span className="home-text47">
                       Marketing Analysis - research and Agile Project
                       Management.
                     </span>
-                    <br className="home-text46"></br>
-                    <span className="home-text47">Experience: 12y +</span>
                     <br className="home-text48"></br>
-                    <span className="home-text49">Programming Languages:</span>
+                    <span className="home-text49">Experience: 12y +</span>
                     <br className="home-text50"></br>
-                    <span className="home-text51">PHP, JAVASCRIPT</span>
+                    <span className="home-text51">Programming Languages:</span>
                     <br className="home-text52"></br>
-                    <span className="home-text53">Web development:</span>
+                    <span className="home-text53">PHP, JAVASCRIPT</span>
                     <br className="home-text54"></br>
-                    <span className="home-text55">HTML5, CSS3.</span>
+                    <span className="home-text55">Web development:</span>
                     <br className="home-text56"></br>
-                    <span className="home-text57">
+                    <span className="home-text57">HTML5, CSS3.</span>
+                    <br className="home-text58"></br>
+                    <span className="home-text59">
                       Drive Business Growth and Success with Personalized
                       Consultations- Business Consultations for Digital
                       Automation and Web Development, UX/UI.
@@ -373,7 +397,7 @@ const Home = (props) => {
               <img
                 alt="image"
                 src="/2099419-200h1-200h.webp"
-                className="home-image10"
+                className="home-image11"
               />
             </div>
             <div className="home-row1">
@@ -417,15 +441,43 @@ const Home = (props) => {
               <img
                 alt="image"
                 src="/group%202262.svg"
-                className="home-image11"
+                className="home-image12"
               />
             </div>
           </div>
         </section>
         <footer className="home-footer">
-          <img alt="image" src="/path15.png" className="home-image12" />
+          <Link href="/">
+            <a className="home-link3">
+              <img
+                alt="image"
+                src="/path15-200h.webp"
+                className="home-image13"
+              />
+            </a>
+          </Link>
+          <div className="home-div1">
+            <Script
+              html={`<div class="years">
+© <span id="year"></span>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</div>
+<style>
+    .years{
+    color:white;
+    font-size: 24px;
+    font-family: 'Khand', sans-serif;
+    font-weight: 400;
+    }
+</style>
+`}
+            ></Script>
+          </div>
           <span className="home-copyright">
-            © 2022 Ninja Team. All Rights Reserved.
+            {' '}
+            Ninja Team. All Rights Reserved.
           </span>
         </footer>
       </div>
@@ -451,6 +503,15 @@ const Home = (props) => {
             padding-right: var(--dl-space-space-fiveunits);
             padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
+          }
+          .home-link {
+            display: contents;
+          }
+          .home-image {
+            width: 80px;
+            filter: invert();
+            object-fit: cover;
+            text-decoration: none;
           }
           .home-desktop-menu {
             display: flex;
@@ -492,11 +553,11 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-image {
+          .home-image01 {
             width: 100px;
             object-fit: cover;
           }
-          .home-image01 {
+          .home-image02 {
             width: 100px;
             object-fit: cover;
           }
@@ -538,7 +599,7 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-threeunits);
             justify-content: space-between;
           }
-          .home-logo2 {
+          .home-logo {
             color: rgb(255, 255, 255);
             font-size: 32px;
             font-style: normal;
@@ -681,7 +742,7 @@ const Home = (props) => {
           .home-paragraph {
             color: rgb(255, 255, 255);
             width: 100%;
-            font-size: 40px;
+            font-size: 35px;
             line-height: 60px;
           }
           .home-links {
@@ -694,7 +755,7 @@ const Home = (props) => {
             width: 25px;
             object-fit: cover;
           }
-          .home-link1 {
+          .home-link2 {
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -706,49 +767,90 @@ const Home = (props) => {
             width: 25px;
             object-fit: cover;
           }
-          .home-tech {
+          .home-figure {
             flex: 0 0 auto;
-            width: auto;
             display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .home-image02 {
-            width: 200px;
-            object-fit: cover;
-            padding-right: var(--dl-space-space-unit);
+            align-items: flex-start;
+            flex-direction: column;
           }
           .home-image03 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
+          .home-figure1 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
           .home-image04 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
+          }
+          .home-figure2 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
           }
           .home-image05 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
+          .home-figure3 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
           .home-image06 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
+          }
+          .home-figure4 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
           }
           .home-image07 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
+          .home-figure5 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
           .home-image08 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
+          .home-figure6 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
           .home-image09 {
+            width: 200px;
+            object-fit: cover;
+            padding-right: var(--dl-space-space-unit);
+          }
+          .home-figure7 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-image10 {
             width: 200px;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
@@ -787,8 +889,8 @@ const Home = (props) => {
             background-color: #000000;
           }
           .home-avatar {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 100px;
           }
@@ -816,7 +918,7 @@ const Home = (props) => {
           .home-description2 {
             color: rgba(255, 255, 255, 0.8);
             width: 100%;
-            font-size: 45px;
+            font-size: 35px;
             max-width: 400px;
           }
           .home-card1 {
@@ -832,8 +934,8 @@ const Home = (props) => {
             background-color: #ffcf77;
           }
           .home-avatar1 {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             border-radius: 100px;
           }
           .home-main1 {
@@ -860,7 +962,7 @@ const Home = (props) => {
           .home-description3 {
             color: rgb(0, 0, 0);
             width: 100%;
-            font-size: 45px;
+            font-size: 35px;
             max-width: 400px;
           }
           .home-card2 {
@@ -883,9 +985,9 @@ const Home = (props) => {
             align-items: flex-start;
             justify-content: flex-start;
           }
-          .home-image10 {
-            width: 100px;
-            height: 100px;
+          .home-image11 {
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 100px;
           }
@@ -922,35 +1024,44 @@ const Home = (props) => {
           .home-description4 {
             color: rgb(0, 0, 0);
             width: 100%;
-            font-size: 45px;
+            font-size: 35px;
             max-width: 400px;
           }
-          .home-image11 {
+          .home-image12 {
             width: 50%;
             object-fit: cover;
           }
           .home-footer {
-            gap: var(--dl-space-space-threeunits);
             width: 100%;
             display: flex;
             position: relative;
             max-width: 1440px;
-            align-items: flex-start;
             padding-top: 120px;
             padding-left: var(--dl-space-space-fiveunits);
             padding-right: var(--dl-space-space-fiveunits);
             flex-direction: row;
             padding-bottom: var(--dl-space-space-threeunits);
           }
-          .home-image12 {
+          .home-link3 {
+            display: contents;
+          }
+          .home-image13 {
             width: 100px;
             filter: invert();
             object-fit: cover;
+            text-decoration: none;
+          }
+          .home-div1 {
+            color: white;
+            margin-top: var(--dl-space-space-twounits);
+            margin-left: var(--dl-space-space-threeunits);
           }
           .home-copyright {
             color: rgb(255, 255, 255);
+            width: 100%;
             font-size: 24px;
             margin-top: var(--dl-space-space-twounits);
+            margin-left: 3.5px;
           }
           @media (max-width: 991px) {
             .home-desktop-menu {
@@ -967,7 +1078,7 @@ const Home = (props) => {
               padding: var(--dl-space-space-unit);
               flex-direction: row;
             }
-            .home-logo2 {
+            .home-logo {
               color: #000000;
             }
             .home-row {
@@ -1065,14 +1176,6 @@ const Home = (props) => {
               font-size: 14px;
               line-height: 21px;
             }
-            .home-text45 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text46 {
-              font-size: 14px;
-              line-height: 21px;
-            }
             .home-text47 {
               font-size: 14px;
               line-height: 21px;
@@ -1114,6 +1217,14 @@ const Home = (props) => {
               line-height: 21px;
             }
             .home-text57 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text58 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text59 {
               font-size: 14px;
               line-height: 21px;
             }
