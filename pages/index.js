@@ -880,6 +880,7 @@ const Home = (props) => {
           }
           .home-image03 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -891,6 +892,7 @@ const Home = (props) => {
           }
           .home-image04 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -902,6 +904,7 @@ const Home = (props) => {
           }
           .home-image05 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -913,6 +916,7 @@ const Home = (props) => {
           }
           .home-image06 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -924,6 +928,7 @@ const Home = (props) => {
           }
           .home-image07 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -935,6 +940,7 @@ const Home = (props) => {
           }
           .home-image08 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -946,6 +952,7 @@ const Home = (props) => {
           }
           .home-image09 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
@@ -957,6 +964,7 @@ const Home = (props) => {
           }
           .home-image10 {
             width: 200px;
+            cursor: pointer;
             object-fit: cover;
             padding-right: var(--dl-space-space-unit);
           }
