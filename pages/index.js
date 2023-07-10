@@ -456,14 +456,7 @@ const Home = (props) => {
               />
             </a>
           </Link>
-          <span className="home-text85">
-            ©
-            <span
-              dangerouslySetInnerHTML={{
-                __html: ' ',
-              }}
-            />
-          </span>
+          <span className="home-text85">Text</span>
           <div className="home-div1">
             <Script
               html={`<div class="years">
@@ -975,7 +968,7 @@ const Home = (props) => {
           }
           .home-card2 {
             gap: var(--dl-space-space-twounits);
-            width: 100%;
+            width: 50%;
             display: flex;
             align-items: flex-start;
             padding-top: var(--dl-space-space-sixunits);
@@ -1003,6 +996,7 @@ const Home = (props) => {
             gap: var(--dl-space-space-fourunits);
             width: 100%;
             display: flex;
+            position: relative;
             align-items: flex-start;
             flex-direction: row;
             justify-content: center;
@@ -1036,7 +1030,10 @@ const Home = (props) => {
             max-width: 400px;
           }
           .home-image12 {
+            top: -57px;
+            right: 31px;
             width: 50%;
+            position: absolute;
             object-fit: cover;
           }
           .home-footer {
@@ -1045,10 +1042,16 @@ const Home = (props) => {
             position: relative;
             max-width: 1440px;
             padding-top: 120px;
+            border-color: var(--dl-color-gray-900);
+            border-width: 1px;
             padding-left: var(--dl-space-space-fiveunits);
             padding-right: var(--dl-space-space-fiveunits);
             flex-direction: row;
             padding-bottom: var(--dl-space-space-threeunits);
+            border-top-width: 1px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
           }
           .home-link3 {
             display: contents;
@@ -1060,17 +1063,14 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text85 {
-            color: var(--dl-color-gray-white);
             height: 24px;
-            font-size: 24px;
             margin-top: var(--dl-space-space-twounits);
-            margin-left: var(--dl-space-space-threeunits);
           }
           .home-div1 {
             color: white;
             height: 24px;
             margin-top: var(--dl-space-space-twounits);
-            margin-left: 3.5px;
+            margin-left: var(--dl-space-space-threeunits);
           }
           .home-copyright {
             color: rgb(255, 255, 255);
