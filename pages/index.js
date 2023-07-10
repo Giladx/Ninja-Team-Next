@@ -225,7 +225,8 @@ const Home = (props) => {
             </div>
             <div className="home-div">
               <Script
-                html={`<style>
+                html={`<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<style>
 .description {
             gap: 120px;
             width: 100%;

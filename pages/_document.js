@@ -48,7 +48,7 @@ class CustomDocument extends Document {
           <div
             dangerouslySetInnerHTML={{
               __html:
-                '<!-- Your body code here -->\n<!-- <script type="text/javascript"> ... </script> --> \n<script data-section-id=\'navbar\' src=\'https://unpkg.com/@teleporthq/teleport-custom-scripts\'></script>\n<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>\n',
+                "<!-- Your body code here -->\n<!-- <script type=\"text/javascript\"> ... </script> --> \n<script data-section-id='navbar' src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>",
             }}
           ></div>
         </body>
