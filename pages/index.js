@@ -456,7 +456,7 @@ const Home = (props) => {
               />
             </a>
           </Link>
-          <span className="home-text85">Text</span>
+          <span className="home-text85">©</span>
           <div className="home-div1">
             <Script
               html={`<div class="years">
@@ -1066,14 +1066,17 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text85 {
+            color: var(--dl-color-gray-white);
             height: 24px;
+            font-size: 24px;
             margin-top: var(--dl-space-space-twounits);
+            margin-left: var(--dl-space-space-threeunits);
           }
           .home-div1 {
             color: white;
             height: 24px;
             margin-top: var(--dl-space-space-twounits);
-            margin-left: var(--dl-space-space-threeunits);
+            margin-left: 3.5px;
           }
           .home-copyright {
             color: rgb(255, 255, 255);
@@ -1312,6 +1315,9 @@ const Home = (props) => {
             .home-paragraph {
               font-size: 21px;
             }
+            .home-tech {
+              display: none;
+            }
             .home-avatar {
               width: 100px;
               height: 100px;
@@ -1328,6 +1334,9 @@ const Home = (props) => {
             .home-image12 {
               top: -7px;
               right: 3px;
+            }
+            .home-text85 {
+              margin-left: var(--dl-space-space-unit);
             }
           }
         `}
