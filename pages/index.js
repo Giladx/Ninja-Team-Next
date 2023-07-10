@@ -150,20 +150,8 @@ const Home = (props) => {
             className="home-divider-image"
           />
           <div className="home-description1">
-            <div>
-              <Script
-                html={`<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new TypeIt("#element", {
-      strings: ["Ninja Team is a highly skilled and specialized team consisting of three members: Shirly, the designer, Boaz, the project manager, and Gilad, the developer. The team uses their collective knowledge and expertise to create high-end Jamstack web solutions for their clients.As the designer, Shirly brings a wealth of experience in creating visually stunning and intuitive web designs. She works closely with clients to understand their brand and target audience, ensuring that the website's aesthetics and user experience align with their goals.Boaz, the project manager, oversees the project's overall success, ensuring that it is delivered on time, within budget, and meets the client's expectations. He has a deep understanding of project management methodologies, ensuring that all team members work efficiently and effectively towards the project's goals.Gilad, the developer, is responsible for creating the website's technical features, such as programming languages, web frameworks, and databases. He is a highly skilled developer with a deep understanding of Jamstack technologies, using his expertise to create fast, secure, and scalable websites.Together, the team brings a collaborative approach to web development, working closely with clients to understand their unique needs and goals. They use their collective knowledge and expertise to create bespoke web solutions that are tailored to each client.The team's focus on Jamstack web solutions emphasizes the use of modern web technologies, including JavaScript frameworks like React, Gatsby, or NextJS, serverless APIs, and headless CMSs. These technologies allow for the creation of fast, secure, and highly scalable websites that provide excellent user experiences.Overall, Ninja Team is a highly skilled and specialized team of professionals who use their knowledge and skills to bring high-end Jamstack web solutions to clients. Their focus on modern web technologies, combined with their collaborative approach, ensures that clients receive tailored web solutions that are both effective and visually stunning."ChatGPT - AI""],
-    }).go();
-  });
-</script>
-<span class="type-effect"></span>`}
-              ></Script>
-            </div>
             <div className="home-content">
-              <p className="home-paragraph">
+              <span id="descElement" className="home-paragraph">
                 <span>
                   Ninja Team is a highly skilled and specialized team consisting
                   of three members: Shirly, the designer, Boaz, the project
@@ -233,7 +221,19 @@ const Home = (props) => {
                 <br></br>
                 <span>&quot;ChatGPT - AI&quot;</span>
                 <br></br>
-              </p>
+              </span>
+            </div>
+            <div>
+              <Script
+                html={`<script>
+   <script>
+        new TypeIt("#descElement", {
+                speed: 25,
+            })
+            .go();
+    </script>
+</script>`}
+              ></Script>
             </div>
             <div className="home-links">
               <a
