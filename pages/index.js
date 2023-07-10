@@ -307,10 +307,10 @@ const Home = (props) => {
     </div>
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
-        new TypeIt("#descElement", {
-                speed: 25,
-            })
-            .go();
+    new TypeIt("#descElement", {
+        speed: 25,
+        })
+        .go();
 </script>
 `}
               ></Script>
