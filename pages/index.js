@@ -27,7 +27,11 @@ const Home = (props) => {
         <header data-thq="thq-navbar" className="home-navbar">
           <Link href="/">
             <a className="home-link">
-              <img alt="image" src="/path15-200h.webp" className="home-image" />
+              <img
+                alt="ninja logo"
+                src="/path15-200h.webp"
+                className="home-image"
+              />
             </a>
           </Link>
           <div
@@ -68,12 +72,12 @@ const Home = (props) => {
                 />
               </button>
             </div>
-            <a href="#go" className="home-view button">
+            <a href="#go" name="Our Bio" className="home-view button">
               Our Bio
             </a>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
-            <button className="button home-button5">
+            <button name="mobile_nav" className="button home-button5">
               <svg viewBox="0 0 1024 1024" className="home-icon">
                 <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
               </svg>
@@ -135,17 +139,21 @@ const Home = (props) => {
             </p>
           </div>
           <div className="home-buttons">
-            <a href="#go" className="home-view1 button">
+            <a href="#go" name="Our Bio" className="home-view1 button">
               Our Bio
             </a>
-            <a href="#go" className="home-learn button-clean button">
+            <a
+              href="#go"
+              name="Learn More"
+              className="home-learn button-clean button"
+            >
               Learn more
             </a>
           </div>
         </section>
         <section className="home-description">
           <img
-            alt="image"
+            alt="Team Illustration"
             src="/hero-divider-1500w-1500w.webp"
             className="home-divider-image"
           />
@@ -359,32 +367,48 @@ const Home = (props) => {
         <div className="home-tech hover08 hoverimg">
           <figure className="home-figure">
             <img
-              alt="image"
+              alt="angular.js"
               src="/angular-200h.webp"
               className="home-image03"
             />
           </figure>
           <figure className="home-figure1">
-            <img alt="image" src="/strapi-200h.webp" className="home-image04" />
+            <img
+              alt="strapi.js"
+              src="/strapi-200h.webp"
+              className="home-image04"
+            />
           </figure>
           <figure className="home-figure2">
-            <img alt="image" src="/react-200h.png" className="home-image05" />
+            <img
+              alt="react.js"
+              src="/react-200h.png"
+              className="home-image05"
+            />
           </figure>
           <figure className="home-figure3">
-            <img alt="image" src="/ghost-200h.png" className="home-image06" />
+            <img
+              alt="gohst.js"
+              src="/ghost-200h.png"
+              className="home-image06"
+            />
           </figure>
           <figure className="home-figure4">
-            <img alt="image" src="/vuejs-200h.png" className="home-image07" />
+            <img alt="vue.js" src="/vuejs-200h.png" className="home-image07" />
           </figure>
           <figure className="home-figure5">
-            <img alt="image" src="/nuxt-200h.png" className="home-image08" />
+            <img alt="nuxt.js" src="/nuxt-200h.png" className="home-image08" />
           </figure>
           <figure className="home-figure6">
-            <img alt="image" src="/nextjs-200h.png" className="home-image09" />
+            <img
+              alt="next.js"
+              src="/nextjs-200h.png"
+              className="home-image09"
+            />
           </figure>
           <figure className="home-figure7">
             <img
-              alt="image"
+              alt="gatsbyjs"
               src="/gatsbyjs-200h.png"
               className="home-image10"
             />
@@ -439,7 +463,7 @@ const Home = (props) => {
                   </div>
                 </div>
                 <img
-                  alt="image"
+                  alt="switch sides"
                   src="/group%202262.svg"
                   className="home-image12"
                 />
@@ -641,7 +665,7 @@ const Home = (props) => {
           <Link href="/">
             <a className="home-link3">
               <img
-                alt="image"
+                alt="ninja footer logo"
                 src="/path15-200h.webp"
                 className="home-image13"
               />
