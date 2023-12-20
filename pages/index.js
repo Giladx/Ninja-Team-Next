@@ -146,7 +146,7 @@ const Home = (props) => {
         <section className="home-description">
           <img
             alt="image"
-            src="/hero-divider-1500w.png"
+            src="/hero-divider-1500w-1500w.webp"
             className="home-divider-image"
           />
           <div className="home-description1">
