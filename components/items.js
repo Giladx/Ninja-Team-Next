@@ -11,9 +11,9 @@ const Items = (props) => {
           className="items-element accordion"
         >
           <div className="items-content">
-            <span className="items-header">{props.Header}</span>
+            <span className="items-header">{props.header}</span>
             <span data-role="accordion-content" className="items-description">
-              {props.Description}
+              {props.description}
             </span>
           </div>
           <div className="items-icon-container">
@@ -38,9 +38,9 @@ const Items = (props) => {
           className="items-element1 accordion"
         >
           <div className="items-content1">
-            <span className="items-header1">{props.Header1}</span>
+            <span className="items-header1">{props.header1}</span>
             <span data-role="accordion-content" className="items-description1">
-              {props.Description1}
+              {props.description1}
             </span>
           </div>
           <div className="items-icon-container1">
@@ -65,9 +65,9 @@ const Items = (props) => {
           className="items-element2 accordion"
         >
           <div className="items-content2">
-            <span className="items-header2">{props.Header2}</span>
+            <span className="items-header2">{props.header2}</span>
             <span data-role="accordion-content" className="items-description2">
-              {props.Description2}
+              {props.description2}
             </span>
           </div>
           <div className="items-icon-container2">
@@ -226,26 +226,26 @@ const Items = (props) => {
 }
 
 Items.defaultProps = {
-  Description:
+  description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-  Description1:
+  description1:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-  Description2:
+  description2:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-  Header: 'Esse cillum dolore eu fugiat nulla pariatur.',
-  Header1: 'Esse cillum dolore eu fugiat nulla pariatur.',
+  header: 'Esse cillum dolore eu fugiat nulla pariatur.',
+  header1: 'Esse cillum dolore eu fugiat nulla pariatur.',
   rootClassName: '',
-  Header2: 'Esse cillum dolore eu fugiat nulla pariatur.',
+  header2: 'Esse cillum dolore eu fugiat nulla pariatur.',
 }
 
 Items.propTypes = {
-  Description: PropTypes.string,
-  Description1: PropTypes.string,
-  Description2: PropTypes.string,
-  Header: PropTypes.string,
-  Header1: PropTypes.string,
+  description: PropTypes.string,
+  description1: PropTypes.string,
+  description2: PropTypes.string,
+  header: PropTypes.string,
+  header1: PropTypes.string,
   rootClassName: PropTypes.string,
-  Header2: PropTypes.string,
+  header2: PropTypes.string,
 }
 
 export default Items

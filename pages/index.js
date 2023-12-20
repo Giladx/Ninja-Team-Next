@@ -21,7 +21,7 @@ const Home = (props) => {
           />
           <meta
             property="og:image"
-            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/68b09f63-53b3-4029-b9d4-aba111d85ba8/8fa5b449-576e-458d-b94c-5b58d2fa46f5?org_if_sml=1"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/68b09f63-53b3-4029-b9d4-aba111d85ba8/8fa5b449-576e-458d-b94c-5b58d2fa46f5?org_if_sml=1&amp;force_format=original"
           />
         </Head>
         <header data-thq="thq-navbar" className="home-navbar">
@@ -85,7 +85,7 @@ const Home = (props) => {
               data-role="Nav"
               className="home-nav1"
             >
-              <div className="home-container1">
+              <div className="home-container01">
                 <span className="home-logo">Character</span>
                 <div data-thq="thq-close-menu" className="home-menu-close">
                   <svg viewBox="0 0 1024 1024" className="home-icon02">
@@ -104,7 +104,7 @@ const Home = (props) => {
                 <span className="home-text03">Team</span>
                 <span className="home-text04">Blog</span>
               </nav>
-              <div className="home-container2">
+              <div className="home-container02">
                 <button className="home-login button">Login</button>
                 <button className="button">Register</button>
               </div>
@@ -224,89 +224,88 @@ const Home = (props) => {
               </span>
             </div>
             <div id="typedtext" className="home-typed container-v"></div>
-            <div className="home-div">
-              <Script
-                html={`<style>
-.description {
-            gap: 120px;
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: left;
-            flex-direction: column;
-            background-color: #27272D;
-        }
+            <div className="home-container03">
+              <div className="home-container04">
+                <Script
+                  html={`<style>
+  .description {
+    gap: 120px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #27272d;
+  }
 </style>
 
 <script>
-        // set up text to print, each item in array is new line
-        var aText = new Array(
-            "Ninja Team is a highly skilled and specialized team consisting of three members: Shirly, the designer, Boaz, the project manager, and Gilad, the developer.", 
-            "The team uses their collective knowledge and",
-            "expertise to create high-end Jamstack web solutions for their clients.",
-            "<br>",
-            "As the designer, Shirly brings a wealth of experience in creating visually stunning and intuitive web designs. She works closely with",
-            "clients to understand their brand and target audience, ensuring that the website's aesthetics and user experience align with their goals.",
-            "<br>",
-            "Boaz, the project manager, oversees the project's overall success, ensuring that it is delivered on",
-            "time, within budget, and meets the client's expectations. He has a deep understanding of project management methodologies,  ensuring",
-            "that all team members work efficiently and effectively towards the project's goals.",
-            "<br>",
-            "Gilad, the developer, is responsible for creating the website's technical features, such as programming",
-            "languages, web frameworks, and databases. He is a highly skilled developer with a deep understanding of Jamstack technologies,",
-            "using his expertise to create fast, secure, and scalable websites.",
-            "<br>",
-            "Together, the team brings a collaborative",
-            "approach to web development, working closely with clients to understand their unique needs and goals. They use",
-            "their collective knowledge and expertise to create bespoke web solutions that are tailored to each client.",
-            "<br>",
-            "The team's focus on Jamstack web solutions emphasizes the use of modern web technologies, including",
-            "JavaScript frameworks like React, Gatsby, or NextJS, serverless APIs, and headless CMSs.",
-            "These technologies allow for the creation of fast, secure, and highly scalable websites that provide",
-            "excellent user experiences.",
-            "<br>",
-            "Overall, Ninja Team is a highly skilled and specialized team of professionals who",
-            "use their knowledge and skills to bring high-end Jamstack web solutions to clients. Their focus on",
-            "modern web technologies, combined with their collaborative approach, ensures that clients receive tailored web",
-            "solutions that are both effective and visually stunning.",
-            "<br>",
-            "'ChatGPT - AI'",
-            "<br>"
-        );
-        var iSpeed = 25; // time delay of print out
-        var iIndex = 0; // start printing array at this posision
-        var iArrLength = aText[0].length; // the length of the text array
-        var iScrollAt = 20; // start scrolling up at this many lines
+  // set up text to print, each item in array is new line
+  var aText = new Array(
+    "Ninja Team is a highly skilled and specialized team consisting of few members: Boaz, the project manager, and Gilad, the developer.",
+    "The team uses their collective knowledge and",
+    "expertise to create high-end Jamstack web solutions for their clients.",
+    "<br>",
+    "Boaz, the project manager, oversees the project's overall success, ensuring that it is delivered on",
+    "time, within budget, and meets the client's expectations. He has a deep understanding of project management methodologies,  ensuring",
+    "that all team members work efficiently and effectively towards the project's goals.",
+    "<br>",
+    "Gilad, the developer, is responsible for creating the website's technical features, such as programming",
+    "languages, web frameworks, and databases. He is a highly skilled developer with a deep understanding of Jamstack technologies,",
+    "using his expertise to create fast, secure, and scalable websites.",
+    "<br>",
+    "Together, the team brings a collaborative",
+    "approach to web development, working closely with clients to understand their unique needs and goals. They use",
+    "their collective knowledge and expertise to create bespoke web solutions that are tailored to each client.",
+    "<br>",
+    "The team's focus on Jamstack web solutions emphasizes the use of modern web technologies, including",
+    "JavaScript frameworks like React, Gatsby, or NextJS, serverless APIs, and headless CMSs.",
+    "These technologies allow for the creation of fast, secure, and highly scalable websites that provide",
+    "excellent user experiences.",
+    "<br>",
+    "Overall, Ninja Team is a highly skilled and specialized team of professionals who",
+    "use their knowledge and skills to bring high-end Jamstack web solutions to clients. Their focus on",
+    "modern web technologies, combined with their collaborative approach, ensures that clients receive tailored web",
+    "solutions that are both effective and visually stunning.",
+    "<br>",
+    "'ChatGPT - AI'",
+    "<br>"
+  );
+  var iSpeed = 25; // time delay of print out
+  var iIndex = 0; // start printing array at this posision
+  var iArrLength = aText[0].length; // the length of the text array
+  var iScrollAt = 20; // start scrolling up at this many lines
 
-        var iTextPos = 0; // initialise text position
-        var sContents = ''; // initialise contents variable
-        var iRow; // initialise current row
+  var iTextPos = 0; // initialise text position
+  var sContents = ""; // initialise contents variable
+  var iRow; // initialise current row
 
-        function typewriter() {
-            sContents = ' ';
-            iRow = Math.max(0, iIndex - iScrollAt);
-            var destination = document.getElementById("typedtext");
+  function typewriter() {
+    sContents = " ";
+    iRow = Math.max(0, iIndex - iScrollAt);
+    var destination = document.getElementById("typedtext");
 
-            while (iRow < iIndex) {
-                sContents += aText[iRow++] + '<br />';
-            }
-            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-            if (iTextPos++ == iArrLength) {
-                iTextPos = 0;
-                iIndex++;
-                if (iIndex != aText.length) {
-                    iArrLength = aText[iIndex].length;
-                    setTimeout("typewriter()", 500);
-                }
-            } else {
-                setTimeout("typewriter()", iSpeed);
-            }
-        }
-
-
-        typewriter();
-    </script>`}
-              ></Script>
+    while (iRow < iIndex) {
+      sContents += aText[iRow++] + "<br />";
+    }
+    destination.innerHTML =
+      sContents + aText[iIndex].substring(0, iTextPos) + "_";
+    if (iTextPos++ == iArrLength) {
+      iTextPos = 0;
+      iIndex++;
+      if (iIndex != aText.length) {
+        iArrLength = aText[iIndex].length;
+        setTimeout("typewriter()", 500);
+      }
+    } else {
+      setTimeout("typewriter()", iSpeed);
+    }
+  }
+  typewriter();
+</script>
+`}
+                ></Script>
+              </div>
             </div>
             <div className="home-links">
               <a
@@ -339,8 +338,9 @@ const Home = (props) => {
           </div>
         </section>
         <div>
-          <Script
-            html={`<style>
+          <div className="home-container06">
+            <Script
+              html={`<style>
 /* Gray Scale */
 .hover08 figure img {
 	-webkit-filter: grayscale(100%);
@@ -353,7 +353,8 @@ const Home = (props) => {
 	filter: grayscale(0);
 }
 </style>`}
-          ></Script>
+            ></Script>
+          </div>
         </div>
         <div className="home-tech hover08 hoverimg">
           <figure className="home-figure">
@@ -392,15 +393,68 @@ const Home = (props) => {
         <section id="go" className="home-cards">
           <div className="home-row">
             <div className="home-card">
+              <div className="home-container07">
+                <img
+                  alt="image"
+                  src="/2099419-200h1-200h.webp"
+                  className="home-image11"
+                />
+              </div>
+              <div className="home-row1">
+                <div className="home-main">
+                  <div className="home-content1">
+                    <h2 className="home-header1">
+                      <br></br>
+                      <span>Gilad Levi</span>
+                    </h2>
+                    <p className="home-description2">
+                      <span>Software &amp; Web Developer</span>
+                      <br></br>
+                      <span>Experience: 20y +</span>
+                      <br></br>
+                      <span>Programming Languages:</span>
+                      <br></br>
+                      <span>C, C++, Ruby, Python, Javascript, PHP, Go.</span>
+                      <br></br>
+                      <span>Web Tech:</span>
+                      <br></br>
+                      <span>HTML5, CSS3, SASS, LESS.</span>
+                      <br></br>
+                      <span>Web Frameworks:</span>
+                      <br></br>
+                      <span>
+                        Dejango, Ruby on Rails, Vue.js, Express.js, Backbone.js,
+                        GraphQL, Node.js, Socket.io, Bootstrap, SQL, Ionic,
+                        WordPress, Drupal.
+                      </span>
+                      <br></br>
+                      <span>C++ Frameworks:</span>
+                      <br></br>
+                      <span>Openframeworks, POCO, ASIO.</span>
+                      <br></br>
+                      <span>Libraries:</span>
+                      <br></br>
+                      <span>jQuery.</span>
+                    </p>
+                  </div>
+                </div>
+                <img
+                  alt="image"
+                  src="/group%202262.svg"
+                  className="home-image12"
+                />
+              </div>
+            </div>
+            <div className="home-card1">
               <img
                 alt="image"
                 src="/shirly-200h.webp"
                 className="home-avatar"
               />
-              <div className="home-main">
-                <div className="home-content1">
-                  <h2 className="home-header1">Shirly N. Marton</h2>
-                  <p className="home-description2">
+              <div className="home-main1">
+                <div className="home-content2">
+                  <h2 className="home-header2">Shirly N. Marton</h2>
+                  <p className="home-description3">
                     <span>
                       Brand &amp; Web designer, UI consultant and awesome.
                       <span
@@ -446,28 +500,28 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div className="home-card1">
+            <div className="home-card2">
               <img alt="image" src="/boaz-200h.webp" className="home-avatar1" />
-              <div className="home-main1">
-                <div className="home-content2">
-                  <h2 className="home-header2">Boaz Glick</h2>
-                  <p className="home-description3">
-                    <span className="home-text47">
+              <div className="home-main2">
+                <div className="home-content3">
+                  <h2 className="home-header3">Boaz Glick</h2>
+                  <p className="home-description4">
+                    <span className="home-text72">
                       Marketing Analysis - research and Agile Project
                       Management.
                     </span>
-                    <br className="home-text48"></br>
-                    <span className="home-text49">Experience: 12y +</span>
-                    <br className="home-text50"></br>
-                    <span className="home-text51">Programming Languages:</span>
-                    <br className="home-text52"></br>
-                    <span className="home-text53">PHP, JAVASCRIPT</span>
-                    <br className="home-text54"></br>
-                    <span className="home-text55">Web development:</span>
-                    <br className="home-text56"></br>
-                    <span className="home-text57">HTML5, CSS3.</span>
-                    <br className="home-text58"></br>
-                    <span className="home-text59">
+                    <br className="home-text73"></br>
+                    <span className="home-text74">Experience: 12y +</span>
+                    <br className="home-text75"></br>
+                    <span className="home-text76">Programming Languages:</span>
+                    <br className="home-text77"></br>
+                    <span className="home-text78">PHP, JAVASCRIPT</span>
+                    <br className="home-text79"></br>
+                    <span className="home-text80">Web development:</span>
+                    <br className="home-text81"></br>
+                    <span className="home-text82">HTML5, CSS3.</span>
+                    <br className="home-text83"></br>
+                    <span className="home-text84">
                       Drive Business Growth and Success with Personalized
                       Consultations- Business Consultations for Digital
                       Automation and Web Development, UX/UI.
@@ -475,59 +529,6 @@ const Home = (props) => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="home-card2">
-            <div className="home-container3">
-              <img
-                alt="image"
-                src="/2099419-200h1-200h.webp"
-                className="home-image11"
-              />
-            </div>
-            <div className="home-row1">
-              <div className="home-main2">
-                <div className="home-content3">
-                  <h2 className="home-header3">
-                    <br></br>
-                    <span>Gilad Levi</span>
-                  </h2>
-                  <p className="home-description4">
-                    <span>Software &amp; Web Developer</span>
-                    <br></br>
-                    <span>Experience: 20y +</span>
-                    <br></br>
-                    <span>Programming Languages:</span>
-                    <br></br>
-                    <span>C, C++, Ruby, Python, Javascript, PHP, Go.</span>
-                    <br></br>
-                    <span>Web Tech:</span>
-                    <br></br>
-                    <span>HTML5, CSS3, SASS, LESS.</span>
-                    <br></br>
-                    <span>Web Frameworks:</span>
-                    <br></br>
-                    <span>
-                      Dejango, Ruby on Rails, Vue.js, Express.js, Backbone.js,
-                      GraphQL, Node.js, Socket.io, Bootstrap, SQL, Ionic,
-                      WordPress, Drupal.
-                    </span>
-                    <br></br>
-                    <span>C++ Frameworks:</span>
-                    <br></br>
-                    <span>Openframeworks, POCO, ASIO.</span>
-                    <br></br>
-                    <span>Libraries:</span>
-                    <br></br>
-                    <span>jQuery.</span>
-                  </p>
-                </div>
-              </div>
-              <img
-                alt="image"
-                src="/group%202262.svg"
-                className="home-image12"
-              />
             </div>
           </div>
         </section>
@@ -542,9 +543,10 @@ const Home = (props) => {
             </a>
           </Link>
           <span className="home-text85">©</span>
-          <div className="home-div2">
-            <Script
-              html={`<div class="years">
+          <div className="home-container08">
+            <div className="home-container09">
+              <Script
+                html={`<div class="years">
 <span id="year"></span>
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -559,7 +561,8 @@ const Home = (props) => {
     }
 </style>
 `}
-            ></Script>
+              ></Script>
+            </div>
           </div>
           <span className="home-copyright">
             {' '}
@@ -678,7 +681,7 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-container1 {
+          .home-container01 {
             width: 100%;
             display: flex;
             align-items: center;
@@ -721,7 +724,7 @@ const Home = (props) => {
           .home-text04 {
             margin-bottom: var(--dl-space-space-unit);
           }
-          .home-container2 {
+          .home-container02 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -834,9 +837,12 @@ const Home = (props) => {
           .home-typed {
             border-width: 0px;
           }
-          .home-div {
+          .home-container03 {
             width: 100%;
             height: auto;
+          }
+          .home-container04 {
+            display: contents;
           }
           .home-links {
             width: 100%;
@@ -859,6 +865,9 @@ const Home = (props) => {
           .home-arrow1 {
             width: 25px;
             object-fit: cover;
+          }
+          .home-container06 {
+            display: contents;
           }
           .home-tech {
             width: 100%;
@@ -980,97 +989,6 @@ const Home = (props) => {
           }
           .home-card {
             gap: var(--dl-space-space-twounits);
-            flex: 1;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            padding-top: var(--dl-space-space-sixunits);
-            padding-left: var(--dl-space-space-fourunits);
-            padding-right: var(--dl-space-space-fiveunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-fourunits);
-            background-color: #000000;
-          }
-          .home-avatar {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 100px;
-          }
-          .home-main {
-            gap: var(--dl-space-space-threeunits);
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-content1 {
-            gap: var(--dl-space-space-unit);
-            width: 100%;
-            display: flex;
-            max-width: 460px;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-header1 {
-            color: rgb(255, 255, 255);
-            font-size: 52px;
-            font-style: normal;
-            font-weight: 500;
-          }
-          .home-description2 {
-            color: rgba(255, 255, 255, 0.8);
-            width: 100%;
-            font-size: 35px;
-            max-width: 400px;
-          }
-          .home-card1 {
-            gap: var(--dl-space-space-twounits);
-            flex: 1;
-            display: flex;
-            align-items: flex-start;
-            padding-top: var(--dl-space-space-sixunits);
-            padding-left: var(--dl-space-space-fourunits);
-            padding-right: var(--dl-space-space-fiveunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-fourunits);
-            background-color: #ffcf77;
-          }
-          .home-avatar1 {
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
-          }
-          .home-main1 {
-            gap: var(--dl-space-space-threeunits);
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-content2 {
-            gap: var(--dl-space-space-unit);
-            width: 100%;
-            display: flex;
-            max-width: 460px;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-header2 {
-            color: rgb(0, 0, 0);
-            font-size: 52px;
-            font-style: normal;
-            font-weight: 500;
-          }
-          .home-description3 {
-            color: rgb(0, 0, 0);
-            width: 100%;
-            font-size: 35px;
-            max-width: 400px;
-          }
-          .home-card2 {
-            gap: var(--dl-space-space-twounits);
             width: 50%;
             display: flex;
             align-items: flex-start;
@@ -1081,7 +999,7 @@ const Home = (props) => {
             padding-bottom: var(--dl-space-space-fourunits);
             background-color: #8fa7df;
           }
-          .home-container3 {
+          .home-container07 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -1104,11 +1022,109 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-main2 {
+          .home-main {
             gap: var(--dl-space-space-threeunits);
             width: 1920px;
             display: flex;
             max-width: 460px;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-content1 {
+            gap: var(--dl-space-space-unit);
+            width: 100%;
+            display: flex;
+            max-width: 460px;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-header1 {
+            color: rgb(0, 0, 0);
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          .home-description2 {
+            color: rgb(0, 0, 0);
+            width: 100%;
+            font-size: 35px;
+            max-width: 400px;
+          }
+          .home-image12 {
+            top: -32px;
+            right: 4px;
+            width: 50%;
+            position: absolute;
+            object-fit: cover;
+          }
+          .home-card1 {
+            gap: var(--dl-space-space-twounits);
+            flex: 1;
+            width: auto;
+            height: auto;
+            display: none;
+            align-items: flex-start;
+            padding-top: var(--dl-space-space-sixunits);
+            padding-left: var(--dl-space-space-fourunits);
+            padding-right: var(--dl-space-space-fiveunits);
+            flex-direction: column;
+            padding-bottom: var(--dl-space-space-fourunits);
+            background-color: #000000;
+          }
+          .home-avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+          }
+          .home-main1 {
+            gap: var(--dl-space-space-threeunits);
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-content2 {
+            gap: var(--dl-space-space-unit);
+            width: 100%;
+            display: flex;
+            max-width: 460px;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-header2 {
+            color: rgb(255, 255, 255);
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          .home-description3 {
+            color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            font-size: 35px;
+            max-width: 400px;
+          }
+          .home-card2 {
+            gap: var(--dl-space-space-twounits);
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            padding-top: var(--dl-space-space-sixunits);
+            padding-left: var(--dl-space-space-fourunits);
+            padding-right: var(--dl-space-space-fiveunits);
+            flex-direction: column;
+            padding-bottom: var(--dl-space-space-fourunits);
+            background-color: #ffcf77;
+          }
+          .home-avatar1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+          }
+          .home-main2 {
+            gap: var(--dl-space-space-threeunits);
+            width: 100%;
+            display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
@@ -1131,13 +1147,6 @@ const Home = (props) => {
             width: 100%;
             font-size: 35px;
             max-width: 400px;
-          }
-          .home-image12 {
-            top: -32px;
-            right: 4px;
-            width: 50%;
-            position: absolute;
-            object-fit: cover;
           }
           .home-footer {
             width: 100%;
@@ -1172,11 +1181,14 @@ const Home = (props) => {
             margin-top: var(--dl-space-space-twounits);
             margin-left: var(--dl-space-space-threeunits);
           }
-          .home-div2 {
+          .home-container08 {
             color: white;
             height: 24px;
             margin-top: var(--dl-space-space-twounits);
             margin-left: 3.5px;
+          }
+          .home-container09 {
+            display: contents;
           }
           .home-copyright {
             color: rgb(255, 255, 255);
@@ -1189,6 +1201,12 @@ const Home = (props) => {
           @media (max-width: 1600px) {
             .home-tech {
               width: 100%;
+            }
+            .home-card1 {
+              display: none;
+            }
+            .home-card2 {
+              margin-top: 0px;
             }
           }
           @media (max-width: 1200px) {
@@ -1228,21 +1246,21 @@ const Home = (props) => {
             .home-card {
               width: 100%;
             }
-            .home-card1 {
-              width: 100%;
-            }
-            .home-description3 {
-              width: 498px;
-            }
-            .home-card2 {
-              width: 100%;
-            }
             .home-row1 {
               flex-direction: column;
             }
             .home-image12 {
               top: -90px;
               right: 16px;
+            }
+            .home-card1 {
+              width: 100%;
+            }
+            .home-card2 {
+              width: 100%;
+            }
+            .home-description4 {
+              width: 498px;
             }
           }
           @media (max-width: 767px) {
@@ -1298,7 +1316,10 @@ const Home = (props) => {
               padding-top: var(--dl-space-space-threeunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
               padding-right: var(--dl-space-space-oneandhalfunits);
-              padding-bottom: var(--dl-space-space-threeunits);
+              padding-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .home-row1 {
+              gap: var(--dl-space-space-twounits);
             }
             .home-main {
               gap: var(--dl-space-space-oneandhalfunits);
@@ -1327,67 +1348,12 @@ const Home = (props) => {
               font-size: 16px;
               line-height: 21px;
             }
-            .home-text47 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text48 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text49 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text50 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text51 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text52 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text53 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text54 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text55 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text56 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text57 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text58 {
-              font-size: 14px;
-              line-height: 21px;
-            }
-            .home-text59 {
-              font-size: 14px;
-              line-height: 21px;
-            }
             .home-card2 {
               gap: var(--dl-space-space-oneandhalfunits);
               padding-top: var(--dl-space-space-threeunits);
               padding-left: var(--dl-space-space-oneandhalfunits);
               padding-right: var(--dl-space-space-oneandhalfunits);
-              padding-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-row1 {
-              gap: var(--dl-space-space-twounits);
+              padding-bottom: var(--dl-space-space-threeunits);
             }
             .home-main2 {
               gap: var(--dl-space-space-oneandhalfunits);
@@ -1397,6 +1363,58 @@ const Home = (props) => {
             }
             .home-description4 {
               font-size: 16px;
+              line-height: 21px;
+            }
+            .home-text72 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text73 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text74 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text75 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text76 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text77 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text78 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text79 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text80 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text81 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text82 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text83 {
+              font-size: 14px;
+              line-height: 21px;
+            }
+            .home-text84 {
+              font-size: 14px;
               line-height: 21px;
             }
             .home-footer {
@@ -1419,6 +1437,14 @@ const Home = (props) => {
             .home-tech {
               display: none;
             }
+            .home-image11 {
+              width: 100px;
+              height: 100px;
+            }
+            .home-image12 {
+              top: -7px;
+              right: 3px;
+            }
             .home-avatar {
               width: 100px;
               height: 100px;
@@ -1427,14 +1453,6 @@ const Home = (props) => {
             .home-avatar1 {
               width: 100px;
               height: 100px;
-            }
-            .home-image11 {
-              width: 100px;
-              height: 100px;
-            }
-            .home-image12 {
-              top: -7px;
-              right: 3px;
             }
             .home-text85 {
               margin-left: var(--dl-space-space-unit);

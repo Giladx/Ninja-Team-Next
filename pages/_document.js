@@ -35,6 +35,10 @@ class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&amp;display=swap"
             data-tag="font"
           ></link>
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+          ></link>
           <noscript
             dangerouslySetInnerHTML={{
               __html:
